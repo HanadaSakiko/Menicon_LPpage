@@ -603,7 +603,6 @@ h1 {
  }
 
  .commitmentTop  {
-    /* background: lightgrey; */
     width: 90%;
     margin: 0 auto 82px;
     justify-content: center;
@@ -649,7 +648,6 @@ h1 {
     z-index: 1;
  }
 
-
  .commitmentTop>div img {
     width: 81.5%;
  }
@@ -663,7 +661,6 @@ h1 {
     position: relative;
  }
 
- 
  .commitmentMain >div ::after {
     content: '';
     position: absolute;
@@ -781,6 +778,20 @@ h1 {
         bottom:0;
      }
 
+     .commitComment::before {
+        border: 9px solid transparent;
+        border-top: 23px solid  #fff;
+        top: 100%;
+        right: 50%;
+     }
+
+     .commitComment::after {
+        border: 10.5px solid transparent;
+        border-top: 25px solid var(--accentColor);
+        top: 100%;
+        right: 49.5%;
+     }
+
      .commitmentTop  {
         display: block;
         width: 95%;
@@ -844,7 +855,6 @@ h1 {
         margin-top: 40px;
         margin-bottom: 5px;
      }
-    
 
      .commitmentMain h5 {
         width: 80%;
@@ -852,7 +862,6 @@ h1 {
         margin:0 auto 10px;
         text-align: center;
      }
-
 
     .commitmentMain .commitmentText {
         width: 90%;
@@ -1400,11 +1409,11 @@ footer {
 }
 
 .footerBottom {
-    background: url(../images/footer_bg.jpg) no-repeat;
+    background: url(../images/footer_bg.jpg) left bottom no-repeat;
     text-align: center;
     height: 100px;
     position: relative;
-}
+} 
 
 .footerBottom::before {
     content: url(../images/footer_l.png);
